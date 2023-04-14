@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: none;
+}
+
+.logo {
+    height: 65px; 
+    width: auto;
+}
+
+.timeline {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 20px 0;
+    margin: 20px 0;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.timeline-content {
+    padding: 20px;
+    background-color: #4189DD;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    color: #FFFFFF;
+}
+.timeline-content h3 {
+    margin-top: 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.timeline-title-container {
+    position: relative;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+.timeline-title {
+    position: absolute;
+    left: 50%;
+    top: -40%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 6px;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.timeline-title h2 {
+    margin: 0;
+}
+
+.timeline-gap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: white;
+    transform: translateX(-50%);
+}
+h4 {
+    font-size: 24px;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.timeline-summary {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px;
+    right: 0rem;
+    position: absolute;
+}
+
+.timeline-summary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline-summary li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.timeline-summary li:last-child {
+    border-bottom: none;
+}
+
+.timeline-summary li::before {
+    content: "•";
+    color: #333;
+    font-size: 18px;
+    margin-right: 10px;
+}

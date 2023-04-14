@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+.grid-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .grid-item {
+    position: relative;
+    padding: 20px;
+    background-color: #ecf0f1;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+  }
+  
+  .grid-item img {
+    width: 20rem;
+    height: 100%; /* Set the height you desire for the images */
+    object-fit: cover; /* To keep aspect ratio and avoid stretching */
+    border-radius: 5px;
+  }
+  
+  .grid-item h3 {
+    margin: 0;
+    padding-top: 10px;
+  }
+  
+  .grid-item p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  /* Add the following styles to your CSS file */
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .modal-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

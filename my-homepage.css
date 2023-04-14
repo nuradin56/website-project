@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.main-title {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.card {
+    width: 360px;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border: 3px solid #333;
+    border-radius: 6px;
+}
+
+.card-video {
+    width: 150%;
+    height: 150%;
+    object-fit: cover;
+}
+
+.card-title {
+    text-align: center;
+    padding: 5px;
+    color: #333;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.weather-time {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #4189DD;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.temperature, .time {
+    display: inline;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.title{
+    display: inline;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
